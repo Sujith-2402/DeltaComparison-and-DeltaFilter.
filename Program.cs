@@ -8,6 +8,7 @@ namespace DataUtility
         [STAThread]
         static void Main()
         {
+             Console.WriteLine("Starting DataUtility...");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // SetHighDpiMode is unavailable on .NET Framework targets; keep DPI settings default.
