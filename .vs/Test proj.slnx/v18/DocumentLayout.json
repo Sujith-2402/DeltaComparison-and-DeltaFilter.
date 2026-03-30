@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Tutorial\\Test proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|c:\\tutorial\\test proj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|c:\\tutorial\\test proj\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|c:\\tutorial\\test proj\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|c:\\tutorial\\test proj\\handlers\\deltafoldercomparisonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:handlers\\deltafoldercomparisonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|C:\\Tutorial\\Test proj\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|C:\\Tutorial\\Test proj\\handlers\\deltacopyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:handlers\\deltacopyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|C:\\Tutorial\\Test proj\\utilities\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:utilities\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|C:\\Tutorial\\Test proj\\handlers\\datacomparisonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:handlers\\datacomparisonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|C:\\Tutorial\\Test proj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8686513F-B31A-46A3-9B08-6A93DF114584}|Test proj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +48,7 @@
         },
         {
           "DockedHeight": 388,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,32 +56,90 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeltaFolderComparisonHandler.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Handlers\\DeltaFolderComparisonHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\DeltaFolderComparisonHandler.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Handlers\\DeltaFolderComparisonHandler.cs",
+              "RelativeToolTip": "Handlers\\DeltaFolderComparisonHandler.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAQwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:07:12.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:37:59.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAhwCMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:37:49.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Utilities\\AppConfig.cs",
+              "RelativeDocumentMoniker": "Utilities\\AppConfig.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Utilities\\AppConfig.cs",
+              "RelativeToolTip": "Utilities\\AppConfig.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:56:47.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeltaCopyHandler.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Handlers\\DeltaCopyHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\DeltaCopyHandler.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Handlers\\DeltaCopyHandler.cs",
+              "RelativeToolTip": "Handlers\\DeltaCopyHandler.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAIBJwAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:53:05.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataComparisonHandler.cs",
+              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Handlers\\DataComparisonHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\DataComparisonHandler.cs",
+              "ToolTip": "C:\\Tutorial\\Test proj\\Handlers\\DataComparisonHandler.cs",
+              "RelativeToolTip": "Handlers\\DataComparisonHandler.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAAANcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:17:06.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Tutorial\\Test proj\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Tutorial\\Test proj\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T08:07:20.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Tutorial\\Test proj\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Tutorial\\Test proj\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T08:07:02.307Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2026-03-30T08:07:20.758Z"
             }
           ]
         },

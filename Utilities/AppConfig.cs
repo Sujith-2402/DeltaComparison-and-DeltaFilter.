@@ -25,6 +25,8 @@ namespace DataUtility
         public string[] DateFormats { get; private set; }
         public int DateColumnIndex { get; private set; }
         public string OutputDirectory { get; private set; }
+        public string DeltaCopyDefaultSource { get; private set; }
+        public string DeltaCopyDefaultDestination { get; private set; }
 
         private AppConfig()
         {
@@ -34,6 +36,8 @@ namespace DataUtility
             DateFormats = new[] { "yyyy-MM-dd", "MM/dd/yyyy", "M/d/yyyy", "yyyyMMdd" };
             DateColumnIndex = 0;
             OutputDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output");
+            DeltaCopyDefaultSource = string.Empty;
+            DeltaCopyDefaultDestination = string.Empty;
 
             try
             {
@@ -69,6 +73,15 @@ namespace DataUtility
                 if (outDir != null && !string.IsNullOrWhiteSpace(outDir.Value))
                 {
                     OutputDirectory = Path.GetFullPath(outDir.Value.Trim());
+                }
+
+                var delta = root.Element("DeltaCopy");
+                if (delta != null)
+                {
+                    var ds = delta.Element("DefaultSource");
+                    if (ds != null) DeltaCopyDefaultSource = ds.Value.Trim();
+                    var dd = delta.Element("DefaultDestination");
+                    if (dd != null) DeltaCopyDefaultDestination = dd.Value.Trim();
                 }
 
                 // ensure directory exists

@@ -69,3 +69,339 @@
 2026-03-26 06:41:21.473 [INFO] UI: Switched to Data Filter mode.
 2026-03-26 06:44:20.364 [INFO] Logger initialised
 2026-03-26 06:44:20.450 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:41:16.494 [INFO] Logger initialised
+2026-03-30 14:41:16.817 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:41:19.419 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 14:41:19.420 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 14:41:27.516 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:41:27.517 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:41:39.656 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 14:41:47.323 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 14:41:50.272 [INFO] Comparison started. Primary lines=38, Secondary unique lines=40
+2026-03-30 14:41:50.297 [INFO] Comparison complete. Delta=0, Existing=38, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 14:43:14.782 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 14:43:14.789 [INFO] Session ended
+2026-03-30 14:47:50.079 [INFO] Logger initialised
+2026-03-30 14:47:50.145 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:47:59.646 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 14:48:05.820 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 14:48:07.293 [INFO] Comparison started. Primary lines=38, Secondary unique lines=40
+2026-03-30 14:48:07.307 [INFO] Comparison complete. Delta=2, Existing=38, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 14:50:04.032 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 14:50:04.042 [INFO] Session ended
+2026-03-30 14:53:50.356 [INFO] Logger initialised
+2026-03-30 14:53:50.420 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:54:01.670 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 14:54:08.275 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 14:54:09.414 [INFO] Comparison started. Primary lines=38, Secondary unique lines=40
+2026-03-30 14:54:09.433 [INFO] Comparison complete. Delta=2, Existing=36, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 14:56:17.145 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 14:56:17.153 [INFO] Session ended
+2026-03-30 14:56:19.696 [INFO] Comparison started. Primary lines=38, Secondary unique lines=42
+2026-03-30 14:56:19.713 [INFO] Comparison complete. Delta=2, Existing=36, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 14:56:32.806 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 14:56:32.819 [INFO] Session ended
+2026-03-30 14:59:48.507 [INFO] Logger initialised
+2026-03-30 14:59:48.575 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 14:59:55.916 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 15:00:02.791 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 15:00:04.143 [INFO] Comparison started. Primary lines=38, Secondary unique lines=42
+2026-03-30 15:00:04.163 [INFO] Comparison complete. Delta=2, Existing=36, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 15:06:36.406 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 15:06:36.415 [INFO] Session ended
+2026-03-30 15:06:57.853 [INFO] Logger initialised
+2026-03-30 15:06:57.916 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:07:04.806 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 15:07:11.677 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 15:07:12.917 [INFO] Comparison started. Primary lines=38, Secondary lines=42
+2026-03-30 15:07:12.932 [INFO] Comparison complete. Delta=6, Existing=36, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 15:14:18.788 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 15:14:18.807 [INFO] Session ended
+2026-03-30 15:15:10.247 [INFO] Logger initialised
+2026-03-30 15:15:10.313 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:24:54.473 [INFO] Logger initialised
+2026-03-30 15:24:54.539 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:24:56.292 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:24:56.292 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:25:02.068 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:25:02.068 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:25:03.066 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:25:03.066 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:25:21.116 [INFO] UI: filter file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 15:29:13.659 [INFO] Logger initialised
+2026-03-30 15:29:13.732 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:29:14.931 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:14.931 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:21.682 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:21.682 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:22.288 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:29:22.288 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:29:23.825 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:23.838 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:26.158 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:26.163 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:28.436 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:28.436 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:29.774 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:29.774 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:31.904 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:31.921 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:32.765 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:29:32.765 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 15:32:55.150 [INFO] Logger initialised
+2026-03-30 15:32:55.224 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 15:32:56.725 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 15:32:56.725 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 15:33:26.757 [INFO] UI: delta file selected: C:\Work\DeltaData.txt
+2026-03-30 15:33:48.592 [INFO] UI: folder selected: C:\Work\Primary Data
+2026-03-30 15:34:17.932 [INFO] UI: folder selected: C:\Work\Secondary
+2026-03-30 15:34:20.026 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Primary Data\AllFiles_BasicMetaData.txt' with 'C:\Work\Secondary\AllFiles_BasicMetaData.txt'
+2026-03-30 15:34:20.057 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Primary Data\file_1.txt' with 'C:\Work\Secondary\file_1.txt'
+2026-03-30 15:34:20.071 [WARN] DeltaCopy: MODIFIED source not found: C:\Work\Secondary\DeltaOutput_20260321_180146.txt
+2026-03-30 15:34:20.074 [WARN] DeltaCopy: NEW source not found: C:\Work\Secondary\file_4.txt
+2026-03-30 15:34:20.074 [WARN] DeltaCopy: NEW source not found: C:\Work\Secondary\file_4.xml
+2026-03-30 15:34:20.084 [INFO] DeltaCopy completed. Marker: C:\Work\DeltaData.delta_copy_done.txt
+2026-03-30 15:34:20.086 [INFO] Converted marker written: C:\Work\DeltaData.converted.txt
+2026-03-30 15:36:59.682 [INFO] Operation completed. Output: C:\Work\DeltaData.txt
+2026-03-30 15:36:59.693 [INFO] Session ended
+2026-03-30 16:16:53.671 [INFO] Logger initialised
+2026-03-30 16:16:53.743 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:17:00.420 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-30 16:17:06.403 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-30 16:17:07.632 [INFO] Comparison started. Primary lines=32, Secondary lines=42
+2026-03-30 16:17:07.651 [INFO] Comparison complete. Delta=42, Existing=0, DeltaPath=C:\Work\Primary Data\Output\comparison_delta.txt, ExistingPath=C:\Work\Primary Data\Output\comparison_existing.txt, Log=C:\Work\Primary Data\Logs\comparison_log.txt
+2026-03-30 16:17:09.387 [INFO] Operation completed. Output: C:\Work\Primary Data\Output\comparison_delta.txt
+2026-03-30 16:17:09.392 [INFO] Session ended
+2026-03-30 16:27:17.622 [INFO] Logger initialised
+2026-03-30 16:27:17.711 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:27:18.918 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:27:18.919 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:27:31.925 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:28:01.441 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestDestination
+2026-03-30 16:28:12.277 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestSource
+2026-03-30 16:28:27.642 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 16:28:27.645 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 16:31:58.297 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:31:58.304 [INFO] Session ended
+2026-03-30 16:32:23.963 [INFO] Logger initialised
+2026-03-30 16:32:24.043 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:32:25.010 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:32:25.010 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:32:28.333 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:32:37.514 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestDestination
+2026-03-30 16:32:47.666 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestSource
+2026-03-30 16:32:48.898 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 16:32:48.900 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 16:36:44.261 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:36:44.270 [INFO] Session ended
+2026-03-30 16:37:36.139 [INFO] Logger initialised
+2026-03-30 16:37:36.208 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:37:37.400 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:37:37.400 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:37:42.342 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:37:50.908 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestDestination
+2026-03-30 16:37:59.421 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestSource
+2026-03-30 16:38:00.804 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 16:38:00.804 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 16:38:57.411 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:38:57.417 [INFO] Session ended
+2026-03-30 16:41:36.763 [INFO] Logger initialised
+2026-03-30 16:41:36.833 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:41:37.925 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:41:37.926 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:41:43.508 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:42:15.127 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestDestination
+2026-03-30 16:42:24.685 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestSource
+2026-03-30 16:42:25.940 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 16:42:25.944 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 16:45:14.494 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:45:14.504 [INFO] Session ended
+2026-03-30 16:46:47.835 [INFO] Logger initialised
+2026-03-30 16:46:47.938 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 16:46:49.765 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:46:49.766 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 16:46:58.642 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:47:17.005 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestDestination
+2026-03-30 16:47:26.464 [INFO] UI: folder selected: C:\Work\Delta copy Test\TestSource
+2026-03-30 16:47:27.792 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 16:47:27.793 [INFO] DeltaCopy: organized logs written to C:\Work\Delta copy Test\DeltaCopy_Logs_20260330_164727.txt
+2026-03-30 16:47:27.798 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 16:48:25.522 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 16:48:25.534 [INFO] Session ended
+2026-03-30 17:05:15.892 [INFO] Logger initialised
+2026-03-30 17:05:15.966 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:05:16.995 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:05:16.996 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:05:29.074 [INFO] UI: delta file selected: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 17:05:40.330 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 17:05:47.761 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 17:05:49.088 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:05:49.137 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\AllFiles_BasicMetaData.txt' -> 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:05:49.148 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:05:49.152 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.docx' -> 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:05:49.156 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:05:49.228 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.pdf' -> 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:05:49.229 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:05:49.273 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.txt' -> 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:05:49.276 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:05:49.311 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.xml' -> 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:05:49.313 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:05:49.315 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:05:49.316 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:05:49.318 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:05:49.320 [INFO] DeltaCopy completed. Marker: C:\Work\Delta copy Test\Deltacp.delta_copy_done.txt
+2026-03-30 17:05:49.321 [INFO] DeltaCopy: organized logs written to C:\Work\Delta copy Test\DeltaCopy_Logs_20260330_170549.txt
+2026-03-30 17:05:49.323 [INFO] Converted marker written: C:\Work\Delta copy Test\Deltacp.converted.txt
+2026-03-30 17:17:58.532 [INFO] Logger initialised
+2026-03-30 17:17:59.425 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:18:05.050 [INFO] Operation completed. Output: C:\Work\Delta copy Test\Deltacp.txt
+2026-03-30 17:18:05.061 [INFO] Session ended
+2026-03-30 17:18:09.858 [INFO] Logger initialised
+2026-03-30 17:18:09.934 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:18:11.067 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:18:11.067 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:18:19.433 [INFO] UI: delta file selected: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:18:29.887 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 17:18:39.582 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 17:18:45.477 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:18:45.484 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\AllFiles_BasicMetaData.txt' -> 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:18:45.486 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:18:45.487 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:18:45.488 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:18:45.489 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:18:45.490 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:18:45.492 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.txt' -> 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:18:45.494 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:18:45.495 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.xml' -> 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:18:45.497 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:18:45.499 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:18:45.500 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:18:45.502 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:18:45.503 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 17:18:45.507 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_171845.txt
+2026-03-30 17:18:45.509 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt
+2026-03-30 17:20:19.103 [INFO] Operation completed. Output: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:20:19.113 [INFO] Session ended
+2026-03-30 17:25:03.964 [INFO] Logger initialised
+2026-03-30 17:25:04.049 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:25:05.191 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:25:05.191 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:25:08.473 [INFO] UI: delta file selected: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:25:23.301 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 17:25:36.946 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 17:25:39.247 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:25:39.249 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\AllFiles_BasicMetaData.txt' -> 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:25:39.249 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:25:39.252 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:25:39.252 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:25:39.255 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:25:39.255 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:25:39.255 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.txt' -> 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:25:39.255 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:25:39.262 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.xml' -> 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:25:39.262 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:25:39.262 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:25:39.262 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:25:39.262 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:25:39.262 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 17:25:39.273 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_172539.txt
+2026-03-30 17:25:39.273 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt
+2026-03-30 17:25:40.686 [INFO] Operation completed. Output: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:25:40.695 [INFO] Session ended
+2026-03-30 17:28:58.691 [INFO] Logger initialised
+2026-03-30 17:28:58.755 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:29:00.192 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:29:00.192 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:29:08.754 [INFO] UI: delta file selected: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:29:18.085 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 17:29:27.464 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 17:29:29.811 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:29:29.812 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:29:29.814 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:29:29.815 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:29:29.816 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:29:29.816 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:29:29.817 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:29:29.818 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:29:29.819 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:29:29.820 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:29:29.822 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:29:29.829 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:29:29.830 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:29:29.833 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:29:29.834 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 17:29:29.835 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_172929.txt
+2026-03-30 17:29:29.837 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt
+2026-03-30 17:29:31.598 [INFO] Operation completed. Output: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:29:31.612 [INFO] Session ended
+2026-03-30 17:32:08.916 [INFO] Logger initialised
+2026-03-30 17:32:08.998 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 17:32:10.136 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:32:10.138 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 17:32:15.107 [INFO] UI: delta file selected: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:32:23.665 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 17:32:31.023 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 17:32:32.002 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:32:32.006 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\AllFiles_BasicMetaData.txt' -> 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:32:32.008 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:32:32.009 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:32:32.009 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:32:32.011 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:32:32.012 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:32:32.014 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.txt' -> 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:32:32.015 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:32:32.016 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.xml' -> 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:32:32.018 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:32:32.021 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:32:32.023 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:32:32.026 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:32:32.028 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 17:32:32.029 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_173232.txt
+2026-03-30 17:32:32.033 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt
+2026-03-30 17:32:33.370 [INFO] Operation completed. Output: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:32:33.379 [INFO] Session ended
+2026-03-30 17:34:25.171 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 17:34:25.172 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 17:34:25.174 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:34:25.174 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 17:34:25.175 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:34:25.176 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 17:34:25.177 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 17:34:25.178 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 17:34:25.179 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 17:34:25.179 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 17:34:25.181 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 17:34:25.184 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 17:34:25.185 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 17:34:25.190 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 17:34:25.192 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 17:34:25.193 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_173425.txt
+2026-03-30 17:34:25.194 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt
+2026-03-30 17:37:52.667 [INFO] Operation completed. Output: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 17:37:52.679 [INFO] Session ended
+2026-03-30 21:28:36.589 [INFO] Logger initialised
+2026-03-30 21:28:36.767 [INFO] UI: Switched to Data Comparison mode.
+2026-03-30 21:28:40.080 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 21:28:40.083 [INFO] UI: Switched to Data Filter mode.
+2026-03-30 21:28:41.795 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 21:28:41.799 [INFO] UI: Switched to Delta Copy mode.
+2026-03-30 21:28:49.372 [INFO] UI: delta file selected: C:\Work\Testing\Primary\DeltaFIle.txt
+2026-03-30 21:30:15.619 [INFO] UI: folder selected: C:\Work\Testing\Destination
+2026-03-30 21:30:31.678 [INFO] UI: folder selected: C:\Work\Testing\Source
+2026-03-30 21:30:58.488 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\AllFiles_BasicMetaData.txt, dest=C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt
+2026-03-30 21:30:58.494 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\AllFiles_BasicMetaData.txt' -> 'C:\Work\Testing\Destination\AllFiles_BasicMetaData.txt'
+2026-03-30 21:30:58.503 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 21:30:58.505 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.docx'
+2026-03-30 21:30:58.505 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 21:30:58.512 [INFO] DeltaCopy: NEW skipped because destination already exists: 'C:\Work\Testing\Destination\file_1.pdf'
+2026-03-30 21:30:58.517 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.txt, dest=C:\Work\Testing\Destination\file_1.txt
+2026-03-30 21:30:58.525 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.txt' -> 'C:\Work\Testing\Destination\file_1.txt'
+2026-03-30 21:30:58.526 [INFO] DeltaCopy: processing row: status=NEW, source=C:\Work\Primary\file_1.xml, dest=C:\Work\Testing\Destination\file_1.xml
+2026-03-30 21:30:58.528 [INFO] DeltaCopy: NEW copied 'C:\Work\Primary\file_1.xml' -> 'C:\Work\Testing\Destination\file_1.xml'
+2026-03-30 21:30:58.536 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.docx, dest=C:\Work\Testing\Destination\file_1.docx
+2026-03-30 21:30:58.547 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.docx' with 'C:\Work\Primary\file_1.docx'
+2026-03-30 21:30:58.549 [INFO] DeltaCopy: processing row: status=MODIFIED, source=C:\Work\Primary\file_1.pdf, dest=C:\Work\Testing\Destination\file_1.pdf
+2026-03-30 21:30:58.551 [INFO] DeltaCopy: MODIFIED replaced 'C:\Work\Testing\Destination\file_1.pdf' with 'C:\Work\Primary\file_1.pdf'
+2026-03-30 21:30:58.559 [INFO] DeltaCopy completed. Marker: C:\Work\Testing\Primary\DeltaFIle.delta_copy_done.txt
+2026-03-30 21:30:58.563 [INFO] DeltaCopy: organized logs written to C:\Work\Testing\Primary\DeltaCopy_Logs_20260330_213058.txt
+2026-03-30 21:30:58.565 [INFO] Converted marker written: C:\Work\Testing\Primary\DeltaFIle.converted.txt

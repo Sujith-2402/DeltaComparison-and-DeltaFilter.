@@ -16,6 +16,7 @@ namespace DataUtility
         // ── Handlers ───────────────────────────────────────────────────────────
         private readonly DataComparisonHandler _comparisonHandler = new DataComparisonHandler();
         private readonly DataFilterHandler _filterHandler = new DataFilterHandler();
+        private readonly DeltaCopyHandler _deltaCopyHandler = new DeltaCopyHandler();
 
         // ── Cancellation ───────────────────────────────────────────────────────
         private CancellationTokenSource _cts;
@@ -37,6 +38,13 @@ namespace DataUtility
             InitializeComponent();
             WireEvents();
             ApplyInitialState();
+            // Populate delta copy defaults
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(AppConfig.Instance.DeltaCopyDefaultSource)) txtSourceCommonPath.Text = AppConfig.Instance.DeltaCopyDefaultSource;
+                if (!string.IsNullOrWhiteSpace(AppConfig.Instance.DeltaCopyDefaultDestination)) txtDestinationPath.Text = AppConfig.Instance.DeltaCopyDefaultDestination;
+            }
+            catch { }
         }
 
         // ── Event wiring ──────────────────────────────────────────────────────
@@ -46,6 +54,7 @@ namespace DataUtility
             // Radio buttons switch panels
             rbComparison.CheckedChanged += (s, e) => SwitchMode();
             rbFilter.CheckedChanged += (s, e) => SwitchMode();
+            rbDeltaCopy.CheckedChanged += (s, e) => SwitchMode();
 
             // Drag & drop for primary / secondary / filter file boxes
             if (AppConfig.Instance.DragAndDropEnabled)
@@ -53,12 +62,16 @@ namespace DataUtility
                 SetupDragDrop(txtPrimaryFile, OnPrimaryFileDrop);
                 SetupDragDrop(txtSecondaryFile, OnSecondaryFileDrop);
                 SetupDragDrop(txtFilterFile, OnFilterFileDrop);
+                SetupDragDrop(txtDeltaFile, OnDeltaFileDrop);
             }
 
             // Browse buttons
             btnBrowsePrimary.Click += (s, e) => BrowseFile(txtPrimaryFile, "primary");
             btnBrowseSecondary.Click += (s, e) => BrowseFile(txtSecondaryFile, "secondary");
             btnBrowseFilter.Click += (s, e) => BrowseFile(txtFilterFile, "filter");
+            btnBrowseDeltaFile.Click += (s, e) => BrowseFile(txtDeltaFile, "delta");
+            btnBrowseDestination.Click += (s, e) => BrowseFolder(txtDestinationPath);
+            btnBrowseSourceCommonPath.Click += (s, e) => BrowseFolder(txtSourceCommonPath);
 
             // Run / Cancel
             btnRun.Click += BtnRun_Click;
@@ -70,6 +83,27 @@ namespace DataUtility
             txtSecondaryFile.LostFocus += (s, e) => EnsurePlaceholder(txtSecondaryFile, "Click Browse or drag & drop a file here …");
             txtFilterFile.GotFocus += (s, e) => ClearPlaceholder(txtFilterFile);
             txtFilterFile.LostFocus += (s, e) => EnsurePlaceholder(txtFilterFile, "Click Browse or drag & drop a file here …");
+            txtDeltaFile.GotFocus += (s, e) => ClearPlaceholder(txtDeltaFile);
+            txtDeltaFile.LostFocus += (s, e) => EnsurePlaceholder(txtDeltaFile, "Click Browse or drag & drop a file here …");
+            txtDestinationPath.GotFocus += (s, e) => ClearPlaceholder(txtDestinationPath);
+            txtDestinationPath.LostFocus += (s, e) => EnsurePlaceholder(txtDestinationPath, destinationPlaceholder);
+            txtSourceCommonPath.GotFocus += (s, e) => ClearPlaceholder(txtSourceCommonPath);
+            txtSourceCommonPath.LostFocus += (s, e) => EnsurePlaceholder(txtSourceCommonPath, sourceCommonPlaceholder);
+        }
+
+        private void OnDeltaFileDrop(object sender, DragEventArgs e) => HandleFileDrop(e, txtDeltaFile, "delta");
+
+        private void BrowseFolder(TextBox target)
+        {
+            using (var dlg = new FolderBrowserDialog())
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    target.Text = dlg.SelectedPath;
+                    target.ForeColor = Color.FromArgb(220, 220, 220);
+                    AuditLogger.Instance.Info($"UI: folder selected: {dlg.SelectedPath}");
+                }
+            }
         }
 
         private void ApplyInitialState()
@@ -83,14 +117,32 @@ namespace DataUtility
 
         private void SwitchMode()
         {
+            // Support three modes: Comparison, Filter, Delta Copy
             bool isComparison = rbComparison.Checked;
+            bool isFilter = rbFilter.Checked;
+            bool isDeltaCopy = rbDeltaCopy.Checked;
+
             pnlComparison.Visible = isComparison;
-            pnlFilter.Visible = !isComparison;
+            pnlFilter.Visible = isFilter;
+            pnlDeltaCopy.Visible = isDeltaCopy;
+
             ResetProgress();
-            UpdateStatus(isComparison ? "Data Comparison mode selected." : "Data Filter mode selected.");
-            AuditLogger.Instance.Info(isComparison
-                ? "UI: Switched to Data Comparison mode."
-                : "UI: Switched to Data Filter mode.");
+
+            if (isComparison)
+            {
+                UpdateStatus("Data Comparison mode selected.");
+                AuditLogger.Instance.Info("UI: Switched to Data Comparison mode.");
+            }
+            else if (isFilter)
+            {
+                UpdateStatus("Data Filter mode selected.");
+                AuditLogger.Instance.Info("UI: Switched to Data Filter mode.");
+            }
+            else if (isDeltaCopy)
+            {
+                UpdateStatus("Delta Copy mode selected.");
+                AuditLogger.Instance.Info("UI: Switched to Delta Copy mode.");
+            }
         }
 
         // ── Browse helpers ────────────────────────────────────────────────────
@@ -211,7 +263,7 @@ namespace DataUtility
                         _cts.Token);
                     _comparisonHandler.ProgressChanged -= OnProgressChanged;
                 }
-                else
+                else if (rbFilter.Checked)
                 {
                     _filterHandler.ProgressChanged += OnProgressChanged;
 
@@ -231,6 +283,36 @@ namespace DataUtility
                         _cts.Token);
 
                     _filterHandler.ProgressChanged -= OnProgressChanged;
+                }
+                else
+                {
+                    // Delta Copy mode
+                    _deltaCopyHandler.ProgressChanged += OnProgressChanged;
+                    // Ensure audit log is written to the same folder as the delta file
+                    try
+                    {
+                        var deltaFolder = Path.GetDirectoryName(txtDeltaFile.Text.Trim());
+                        if (!string.IsNullOrWhiteSpace(deltaFolder)) AuditLogger.Instance.SetOutputFolder(deltaFolder);
+                    }
+                    catch { }
+
+                    outputPath = await _deltaCopyHandler.RunAsync(
+                        txtDeltaFile.Text.Trim(),
+                        txtSourceCommonPath.Text.Trim(),
+                        txtDestinationPath.Text.Trim(),
+                        _cts.Token);
+                    _deltaCopyHandler.ProgressChanged -= OnProgressChanged;
+
+                    // create a converted marker file next to the delta input (same base name)
+                    try
+                    {
+                        var deltaFolder = Path.GetDirectoryName(txtDeltaFile.Text.Trim());
+                        var baseName = Path.GetFileNameWithoutExtension(txtDeltaFile.Text.Trim());
+                        var converted = Path.Combine(deltaFolder ?? string.Empty, baseName + ".converted.txt");
+                        File.WriteAllText(converted, "Converted: " + DateTime.Now.ToString("o") + Environment.NewLine + "Source=" + txtSourceCommonPath.Text + Environment.NewLine + "Destination=" + txtDestinationPath.Text);
+                        AuditLogger.Instance.Info("Converted marker written: " + converted);
+                    }
+                    catch { }
                 }
 
                 progressBar.Value = progressBar.Maximum;
@@ -306,7 +388,7 @@ namespace DataUtility
                 if (!File.Exists(txtSecondaryFile.Text.Trim()))
                 { error = "Secondary file does not exist."; return false; }
             }
-            else
+            else if (rbFilter.Checked)
             {
                 var filterPath = txtFilterFile.Text?.Trim() ?? string.Empty;
                 // treat placeholder as empty
@@ -317,6 +399,21 @@ namespace DataUtility
                 { error = "Filter input file does not exist."; return false; }
                 if (rbFilterBetween.Checked && dtpEndDate.Value.Date < dtpFilterDate.Value.Date)
                 { error = "End date must be on or after the Start date."; return false; }
+            }
+            else if (rbDeltaCopy.Checked)
+            {
+                var deltaPath = txtDeltaFile.Text?.Trim() ?? string.Empty;
+                if (deltaPath == deltaPlaceholder) deltaPath = string.Empty;
+                if (string.IsNullOrWhiteSpace(deltaPath)) { error = "Please select a Delta file."; return false; }
+                if (!File.Exists(deltaPath)) { error = "Delta file does not exist."; return false; }
+                var dest = txtDestinationPath.Text?.Trim() ?? string.Empty;
+                if (dest == destinationPlaceholder) dest = string.Empty;
+                if (string.IsNullOrWhiteSpace(dest)) { error = "Please select a Destination base path."; return false; }
+                if (!Directory.Exists(dest)) { error = "Destination base path does not exist."; return false; }
+                var src = txtSourceCommonPath.Text?.Trim() ?? string.Empty;
+                if (src == sourceCommonPlaceholder) src = string.Empty;
+                if (string.IsNullOrWhiteSpace(src)) { error = "Please select a Source common path."; return false; }
+                if (!Directory.Exists(src)) { error = "Source common path does not exist."; return false; }
             }
 
             return true;
@@ -341,12 +438,19 @@ namespace DataUtility
         {
             rbComparison.Enabled = enabled;
             rbFilter.Enabled = enabled;
+            rbDeltaCopy.Enabled = enabled;
             btnBrowsePrimary.Enabled = enabled;
             btnBrowseSecondary.Enabled = enabled;
             btnBrowseFilter.Enabled = enabled;
+            btnBrowseDeltaFile.Enabled = enabled;
+            btnBrowseDestination.Enabled = enabled;
+            btnBrowseSourceCommonPath.Enabled = enabled;
             txtPrimaryFile.Enabled = enabled;
             txtSecondaryFile.Enabled = enabled;
             txtFilterFile.Enabled = enabled;
+            txtDeltaFile.Enabled = enabled;
+            txtDestinationPath.Enabled = enabled;
+            txtSourceCommonPath.Enabled = enabled;
             dtpFilterDate.Enabled = enabled;
             dtpEndDate.Enabled = enabled;
             rbFilterAfter.Enabled = enabled;

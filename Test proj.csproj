@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Handlers\DataComparisonHandler.cs" />
     <Compile Include="Handlers\DataFilterHandler.cs" />
+    <Compile Include="Handlers\DeltaCopyHandler.cs" />
+    <Compile Include="Handlers\DeltaFolderComparisonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\AppConfig.cs" />

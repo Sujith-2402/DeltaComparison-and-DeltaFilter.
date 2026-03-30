@@ -17,6 +17,7 @@ namespace DataUtility
         private GroupBox grpMode;
         private RadioButton rbComparison;
         private RadioButton rbFilter;
+        private RadioButton rbDeltaCopy;
 
         // ── Data Comparison panel ─────────────────────────────────────────────
         private Panel pnlComparison;
@@ -53,6 +54,25 @@ namespace DataUtility
         private Label lblEndDateLabel;
         private DateTimePicker dtpEndDate;
         private Label lblMandatoryNote;
+
+        // Delta Copy controls
+        private Panel pnlDeltaCopy;
+        private GroupBox grpDeltaFile;
+        private Label lblDeltaFile;
+        private TextBox txtDeltaFile;
+        private Button btnBrowseDeltaFile;
+        private Label lblDeltaHint;
+        private string deltaPlaceholder = "Enter delta file path...";
+
+        private GroupBox grpDeltaPaths;
+        private Label lblDestinationPath;
+        private TextBox txtDestinationPath;
+        private Button btnBrowseDestination;
+        private Label lblSourceCommonPath;
+        private TextBox txtSourceCommonPath;
+        private Button btnBrowseSourceCommonPath;
+        private string destinationPlaceholder = "Enter destination base path...";
+        private string sourceCommonPlaceholder = "Enter source common path...";
 
         // ── Progress section ──────────────────────────────────────────────────
         private GroupBox grpProgress;
@@ -146,7 +166,17 @@ namespace DataUtility
                 Cursor = Cursors.Hand
             };
 
-            grpMode.Controls.AddRange(new Control[] { rbComparison, rbFilter });
+            rbDeltaCopy = new RadioButton
+            {
+                Text = "Delta Copy",
+                Location = new Point(440, 30),
+                Size = new Size(140, 28),
+                Font = new Font("Segoe UI", 10f, FontStyle.Bold),
+                ForeColor = Color.FromArgb(200, 120, 255),
+                Cursor = Cursors.Hand
+            };
+
+            grpMode.Controls.AddRange(new Control[] { rbComparison, rbFilter, rbDeltaCopy });
 
             // ─── COMPARISON PANEL ──────────────────────────────────────────────
             pnlComparison = new Panel
@@ -244,6 +274,37 @@ namespace DataUtility
 
             pnlFilter.Controls.AddRange(new Control[] { grpFilterFile, grpFilterOptions });
 
+            // ─── DELTA COPY PANEL ─────────────────────────────────────────────
+            pnlDeltaCopy = new Panel
+            {
+                Location = new Point(10, 174),
+                Size = new Size(786, 270),
+                Visible = false
+            };
+
+            grpDeltaFile = CreateGroupBox("Delta File (drag & drop supported)", 0, 786, 100);
+            lblDeltaFile = CreateLabel("Delta File:", 16, 28);
+            txtDeltaFile = CreateFileTextBox(90, 28, 575);
+            EnsurePlaceholder(txtDeltaFile, deltaPlaceholder);
+            btnBrowseDeltaFile = CreateBrowseButton(668, 26);
+            lblDeltaHint = CreateHintLabel("Browse or drag & drop the delta file generated earlier.", 16, 65);
+            grpDeltaFile.Controls.AddRange(new Control[] { lblDeltaFile, txtDeltaFile, btnBrowseDeltaFile, lblDeltaHint });
+
+            grpDeltaPaths = CreateGroupBox("Delta Copy Paths", 110, 786, 150);
+            lblDestinationPath = CreateLabel("Destination Path:", 16, 28);
+            txtDestinationPath = CreateFileTextBox(140, 28, 525);
+            EnsurePlaceholder(txtDestinationPath, destinationPlaceholder);
+            btnBrowseDestination = CreateBrowseButton(668, 26);
+
+            lblSourceCommonPath = CreateLabel("Source Common Path:", 16, 68);
+            txtSourceCommonPath = CreateFileTextBox(160, 68, 505);
+            EnsurePlaceholder(txtSourceCommonPath, sourceCommonPlaceholder);
+            btnBrowseSourceCommonPath = CreateBrowseButton(668, 66);
+
+            grpDeltaPaths.Controls.AddRange(new Control[] { lblDestinationPath, txtDestinationPath, btnBrowseDestination, lblSourceCommonPath, txtSourceCommonPath, btnBrowseSourceCommonPath });
+
+            pnlDeltaCopy.Controls.AddRange(new Control[] { grpDeltaFile, grpDeltaPaths });
+
             // ─── Progress GroupBox ─────────────────────────────────────────────
             grpProgress = CreateGroupBox("Execution Progress", 455, 786, 110);
 
@@ -304,6 +365,7 @@ namespace DataUtility
                 grpMode,
                 pnlComparison,
                 pnlFilter,
+                pnlDeltaCopy,
                 grpProgress,
                 btnRun
             });
