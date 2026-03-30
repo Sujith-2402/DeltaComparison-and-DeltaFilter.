@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+
+  <!-- ===================== GENERAL SETTINGS ===================== -->
+  <General>
+    <ApplicationName>Data Comparison &amp; Filter Utility</ApplicationName>
+    <Version>1.0.0</Version>
+    <LogLevel>DEBUG</LogLevel>
+    <!-- Log levels: DEBUG | INFO | WARNING | ERROR -->
+    <AuditLogEnabled>true</AuditLogEnabled>
+    <AuditLogFolder>Logs</AuditLogFolder>
+    <!-- Relative to application directory or absolute path -->
+    <AuditLogFileName>AuditLog_{DATE}.txt</AuditLogFileName>
+    <!-- {DATE} will be replaced with yyyyMMdd -->
+  </General>
+
+  <!-- ===================== DATA COMPARISON SETTINGS ===================== -->
+  <DataComparison>
+    <!-- Supported file types for primary and secondary files -->
+    <SupportedExtensions>
+      <Extension>.csv</Extension>
+      <Extension>.txt</Extension>
+      <Extension>.xlsx</Extension>
+      <Extension>.xls</Extension>
+    </SupportedExtensions>
+
+    <!-- Column used as unique key for comparison -->
+    <PrimaryKeyColumn>ID</PrimaryKeyColumn>
+
+    <!-- Column name that holds last modified date in source files -->
+    <DateModifiedColumn>DateModified</DateModifiedColumn>
+
+    <!-- Date format used in the source data files -->
+    <SourceDateFormat>yyyy-MM-dd HH:mm:ss</SourceDateFormat>
+
+    <!-- Output file settings -->
+    <Output>
+      <!-- Output is saved in same folder as Input file, same name -->
+      <FileNameSuffix>_Compared</FileNameSuffix>
+      <!-- Final name: InputFileName_Compared.csv -->
+      <Format>CSV</Format>
+      <!-- CSV | TXT | XLSX -->
+      <IncludeHeader>true</IncludeHeader>
+      <Columns>
+        <Column>FileLocation</Column>
+        <Column>FileName</Column>
+        <Column>ChangeType</Column>
+        <!-- NEW | MODIFIED -->
+        <Column>DateModified</Column>
+        <Column>PrimaryKeyValue</Column>
+      </Columns>
+      <Delimiter>,</Delimiter>
+    </Output>
+
+    <!-- Comparison behaviour -->
+    <Options>
+      <DetectNewRecords>true</DetectNewRecords>
+      <DetectModifiedRecords>true</DetectModifiedRecords>
+      <DetectDeletedRecords>false</DetectDeletedRecords>
+      <CaseSensitiveComparison>false</CaseSensitiveComparison>
+      <TrimWhitespace>true</TrimWhitespace>
+      <!-- Columns to EXCLUDE from value comparison (still used for key lookup) -->
+      <ExcludeColumnsFromComparison>
+        <Column>DateModified</Column>
+        <Column>CreatedBy</Column>
+      </ExcludeColumnsFromComparison>
+    </Options>
+  </DataComparison>
+
+  <!-- ===================== DATA FILTER SETTINGS ===================== -->
+  <DataFilter>
+    <!-- Supported file types for input file -->
+    <SupportedExtensions>
+      <Extension>.csv</Extension>
+      <Extension>.txt</Extension>
+      <Extension>.xlsx</Extension>
+      <Extension>.xls</Extension>
+    </SupportedExtensions>
+
+    <!-- Column to apply date filter on -->
+    <DateFilterColumn>DateModified</DateFilterColumn>
+
+    <!-- Date format in the source file -->
+    <SourceDateFormat>yyyy-MM-dd HH:mm:ss</SourceDateFormat>
+
+    <!-- Filter mode: EXACT | BEFORE | AFTER | BETWEEN -->
+    <FilterMode>AFTER</FilterMode>
+
+    <!-- If FilterMode is BETWEEN, provide both StartDate and EndDate via UI -->
+    <!-- Date format accepted from the UI date pickers -->
+    <UIDateFormat>dd/MM/yyyy</UIDateFormat>
+
+    <!-- Output file settings: same location, same name as input -->
+    <Output>
+      <FileNameSuffix>_Filtered</FileNameSuffix>
+      <!-- Final name: InputFileName_Filtered.csv -->
+      <Format>SAME_AS_INPUT</Format>
+      <!-- SAME_AS_INPUT | CSV | TXT | XLSX -->
+      <IncludeHeader>true</IncludeHeader>
+      <Delimiter>,</Delimiter>
+    </Output>
+
+    <!-- Filter behaviour -->
+    <Options>
+      <IncludeBoundaryDate>true</IncludeBoundaryDate>
+      <!-- If true, records ON the filter date are included -->
+      <TrimWhitespace>true</TrimWhitespace>
+      <CaseSensitiveFilter>false</CaseSensitiveFilter>
+    </Options>
+  </DataFilter>
+
+  <!-- ===================== UI SETTINGS ===================== -->
+  <UI>
+    <ProgressBar>
+      <UpdateIntervalMs>100</UpdateIntervalMs>
+      <ShowRecordCount>true</ShowRecordCount>
+    </ProgressBar>
+    <DragAndDrop>
+      <Enabled>true</Enabled>
+      <AllowedExtensions>
+        <Extension>.csv</Extension>
+        <Extension>.txt</Extension>
+        <Extension>.xlsx</Extension>
+        <Extension>.xls</Extension>
+      </AllowedExtensions>
+    </DragAndDrop>
+  </UI>
+
+</Configuration>

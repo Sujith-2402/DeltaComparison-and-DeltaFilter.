@@ -1,0 +1,71 @@
+﻿2026-03-25 16:27:40.629 [INFO] Logger initialised
+2026-03-25 16:27:40.708 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 16:27:52.631 [INFO] UI: primary file selected: C:\Work\Primary Data\AllFiles_BasicMetaData.txt
+2026-03-25 16:27:59.386 [INFO] UI: secondary file selected: C:\Work\Secondary data\AllFiles_BasicMetaData.txt
+2026-03-25 16:28:02.010 [INFO] Comparison started. Primary lines=38, Secondary unique lines=40
+2026-03-25 16:28:02.046 [INFO] Comparison complete. Delta=3, Existing=35, DeltaPath=C:\Tutorial\Test proj\bin\Debug\Output\comparison_delta.txt, ExistingPath=C:\Tutorial\Test proj\bin\Debug\Output\comparison_existing.txt, Log=C:\Tutorial\Test proj\bin\Debug\Output\comparison_log.txt
+2026-03-25 16:28:04.513 [INFO] Operation completed. Output: C:\Tutorial\Test proj\bin\Debug\Output\comparison_delta.txt
+2026-03-25 16:28:04.539 [INFO] Session ended
+2026-03-25 16:29:13.679 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 16:29:13.681 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 16:31:16.402 [INFO] Logger initialised
+2026-03-25 16:31:16.484 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:04:23.551 [INFO] Logger initialised
+2026-03-25 17:04:23.601 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:04:35.910 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:04:35.911 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:04:37.501 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:04:37.502 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:05:50.723 [INFO] Logger initialised
+2026-03-25 17:05:50.773 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:45:54.369 [INFO] Logger initialised
+2026-03-25 17:45:54.436 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:46:09.712 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:46:09.713 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:46:17.798 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:46:17.801 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:47:03.649 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:47:03.651 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:47:06.753 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:47:06.755 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 17:47:07.895 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:47:07.896 [INFO] UI: Switched to Data Filter mode.
+2026-03-25 17:47:26.725 [INFO] UI: filter file dropped: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt
+2026-03-25 18:21:31.700 [INFO] UI: Switched to Data Comparison mode.
+2026-03-25 18:21:31.701 [INFO] UI: Switched to Data Comparison mode.
+2026-03-26 06:13:21.777 [INFO] Logger initialised
+2026-03-26 06:13:21.883 [INFO] UI: Switched to Data Comparison mode.
+2026-03-26 06:13:24.833 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:13:24.835 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:13:38.888 [INFO] UI: filter file selected: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt
+2026-03-26 06:13:52.176 [INFO] Filter run on file: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=2/24/2026, EndDate=<none>, TotalRows=570239
+2026-03-26 06:13:52.177 [INFO] Skipping malformed line 1
+2026-03-26 06:16:47.042 [INFO] Filter complete. Input=C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=2/24/2026, Matched=4968, Unmatched=565270, MatchedOutput=C:\Tutorial\Test proj\bin\Debug\Output\filter_matched.txt, UnmatchedOutput=C:\Tutorial\Test proj\bin\Debug\Output\filter_unmatched.txt
+2026-03-26 06:17:26.571 [INFO] Operation completed. Output: C:\Tutorial\Test proj\bin\Debug\Output\filter_matched.txt
+2026-03-26 06:17:26.692 [INFO] Session ended
+2026-03-26 06:24:25.244 [INFO] Logger initialised
+2026-03-26 06:24:25.336 [INFO] UI: Switched to Data Comparison mode.
+2026-03-26 06:24:27.226 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:24:27.228 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:24:32.999 [INFO] UI: filter file selected: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt
+2026-03-26 06:24:38.898 [INFO] Filter run on file: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=3/24/2026, EndDate=<none>, TotalRows=570239
+2026-03-26 06:24:38.899 [INFO] Skipping malformed line 1
+2026-03-26 06:27:21.490 [INFO] Filter complete. Input=C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=3/24/2026, Matched=11, Unmatched=570227, MatchedOutput=C:\Users\Sujith\Downloads\filter_matched.txt, UnmatchedOutput=C:\Users\Sujith\Downloads\filter_unmatched.txt
+2026-03-26 06:27:25.521 [INFO] Operation completed. Output: C:\Users\Sujith\Downloads\filter_matched.txt
+2026-03-26 06:27:25.539 [INFO] Session ended
+2026-03-26 06:30:33.906 [INFO] Logger initialised
+2026-03-26 06:30:33.989 [INFO] UI: Switched to Data Comparison mode.
+2026-03-26 06:30:35.808 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:30:35.814 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:30:42.765 [INFO] UI: filter file selected: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt
+2026-03-26 06:30:53.637 [INFO] Filter run on file: C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=2/24/2026, EndDate=<none>, TotalRows=570239
+2026-03-26 06:30:53.637 [INFO] Skipping malformed line 1
+2026-03-26 06:33:48.752 [INFO] Filter complete. Input=C:\Users\Sujith\Downloads\AllFiles_BasicMetaData.txt, Mode=AFTER, FilterDate=2/24/2026, Matched=4968, Unmatched=565270, MatchedOutput=C:\Users\Sujith\Downloads\Output\filter_matched.txt, UnmatchedOutput=C:\Users\Sujith\Downloads\Output\filter_unmatched.txt
+2026-03-26 06:36:44.078 [INFO] Operation completed. Output: C:\Users\Sujith\Downloads\Output\filter_matched.txt
+2026-03-26 06:36:44.104 [INFO] Session ended
+2026-03-26 06:41:19.140 [INFO] Logger initialised
+2026-03-26 06:41:19.252 [INFO] UI: Switched to Data Comparison mode.
+2026-03-26 06:41:21.471 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:41:21.473 [INFO] UI: Switched to Data Filter mode.
+2026-03-26 06:44:20.364 [INFO] Logger initialised
+2026-03-26 06:44:20.450 [INFO] UI: Switched to Data Comparison mode.

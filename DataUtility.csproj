@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>DataUtility</AssemblyName>
+    <RootNamespace>DataUtility</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!-- Copy Configuration.xml to output directory -->
+  <ItemGroup>
+    <None Update="Configuration.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- NuGet packages -->
+  <ItemGroup>
+    <!--
+      EPPlus is used for reading/writing .xlsx Excel files.
+      License: LGPL / Commercial.
+      For non-commercial use set LicenseContext = NonCommercial (see AppConfig usage in handlers).
+    -->
+    <PackageReference Include="EPPlus" Version="7.3.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+C:\Tutorial\Test proj\obj\Debug\Test proj.csproj.AssemblyReference.cache
+C:\Tutorial\Test proj\obj\Debug\Test_proj.Properties.Resources.resources
+C:\Tutorial\Test proj\obj\Debug\Test proj.csproj.GenerateResource.cache
+C:\Tutorial\Test proj\obj\Debug\Test proj.csproj.CoreCompileInputs.cache
+C:\Tutorial\Test proj\bin\Debug\Test proj.exe.config
+C:\Tutorial\Test proj\bin\Debug\Test proj.exe
+C:\Tutorial\Test proj\bin\Debug\Test proj.pdb
+C:\Tutorial\Test proj\obj\Debug\Test proj.exe
+C:\Tutorial\Test proj\obj\Debug\Test proj.pdb
